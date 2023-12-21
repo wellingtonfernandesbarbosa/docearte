@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color1);
+}
+
+.main {
+  display: flex;
+  max-width: 1440px;
+  width: 90%;
+  align-items: center;
+  margin: 2em 3em;
+}
+
+
+.login-section {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  height: auto;
+  padding: 4em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  width: 50%;
+}
+
+.login-logo {
+  width: 200px;
+}
+
+.login-message {
+  font-family: var(--font-clicker);
+  font-size: 3em;
+  line-height: 1.5em;
+  text-align: center;
+  width: 80%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 2em;
+}
+
+.login-form .input-container {
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.login-form .input-container input {
+  width: 60%;
+  background-color: var(--primary-color1);
+}
+
+.disabledButton {
+  background-color: gray;
+  color: var(--tertiary-color2);
+  cursor: default;
+}
+
+.disabledButton:hover {
+  scale: 1.0;
+}
+
+.errorMessage {
+  text-align: center;
+  color: red;
+}
+
+@media (max-width: 1300px) {
+  .login-logo {
+    width: 200px;
+  }
+
+  .login-message {
+    font-size: 2em;
+    width: 90%;
+  }
+  .formButton{
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .main {
+    margin: 2em 1em;
+    height: auto;
+  }
+
+  .login-section {
+    flex-direction: column;
+  }
+
+  .login-welcome, .login-form {
+    width: 100%;
+  }
+
+  .login-form .input-container input {
+    width: 80%;
+  }
+}
+
+@media (max-height: 650px) {
+  .login-section {
+    padding: 2em;
+  }
+}
+
+@media (max-width: 617px) {
+  .login-section {
+    padding: 3em;    
+  }
+}
+
+@media (max-height: 550px) {
+  .login-logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 520px) {
+  .login-section {
+    padding: 2em;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    height: auto;
+  }
+  
+  .login-section {
+    padding: 1em;
+  }
+}

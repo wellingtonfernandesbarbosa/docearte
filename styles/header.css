@@ -1,0 +1,131 @@
+header {
+  background-color: var(--secondary-color-1);
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.company-link-header {
+  color: var(--tertiary-color-2)
+}
+
+.show, .right-menu li {
+  background-color: var(--secondary-color-1);
+}
+
+.right-menu {
+  display: flex;
+
+  list-style: none;
+  padding: 16px 16px 16px 8px;
+}
+
+.right-menu li {
+  padding: 16px 0px 16px 16px;
+}
+
+.left-menu {
+  order: -1;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+.orderCake {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  background-image: url('../assets/img/banner-header_1440.webp');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+}
+
+.orderCake::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: url('../assets/img/banner-header_1440.webp') center/cover;
+  filter: blur(250px);
+  transform: translateY(-50%);
+}
+
+.order-title, .order-button {
+  text-align: center;
+  z-index: 1;
+}
+
+.order-title {
+  font-family: var(--font-clicker);
+  color: #000000;
+  font-size: 48px;
+}
+
+.order-button:active {
+  background-color: var(--tertiary-color-2);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .right-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 30%;
+    z-index: 2;
+  }
+
+  .right-menu.show {
+    display: flex;
+  }
+
+  .right-menu li {
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 490px) {
+  .orderCake {
+    height: 300px;
+  }
+
+  .order-title {
+    font-size: 36px;
+  }
+
+  .order-button {
+    font-size: 16px;
+  }
+}
