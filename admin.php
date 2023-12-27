@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (empty($user) || empty($password)) {
     echo "Por favor, preencha todos os campos.";
-  } else if ($user === $adminUser && $password === $adminPassword) {
+  } else if ($user == $adminUser && $password == $adminPassword) {
     $errorMsg = false;
     $loggedUser = true;
   } else {

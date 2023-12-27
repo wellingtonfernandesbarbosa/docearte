@@ -24,7 +24,7 @@
     <img src="android-chrome-192x192.png" alt="Logo da Doce Arte" class="logo">
     <h1 class="error-title">Oops! Página não encontrada.</h1>
     <p class="error-message">A página que você está procurando pode ter sido removida ou não está disponível no momento.</p>
-    <a href="https://docearte.wellsfernandes.repl.co/" class="button blackButton">Ir para a Página Inicial</a>
+    <a href="home" class="button blackButton">Ir para a Página Inicial</a>
   </div>
 
 </body>

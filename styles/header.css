@@ -60,7 +60,7 @@ header {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 400px; /* Ajuste a altura conforme necessário */
+  height: 400px;
   overflow: hidden;
 }
 

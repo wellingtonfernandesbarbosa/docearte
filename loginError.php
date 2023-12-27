@@ -1,8 +1,24 @@
-<?php 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-require './adminHead.php';
+  <meta property="og:title" content="Doce Arte Confeitaria">
+  <meta property="og:description" content="Bolos incríveis para momentos inesquecíveis! Clique aqui para encomendar o seu.">
+  <meta property="og:image" content="https://docearte.wellsfernandes.repl.co/assets/favicon/android-chrome-512x512.png">
+  <meta property="og:url" content="https://docecake.wellsfernandes.repl.co/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt-BR">
 
-?>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/login.css">
+  <title>Doce Cake - Admin</title>
+</head>
 
 <body>
 
