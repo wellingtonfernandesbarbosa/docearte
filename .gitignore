@@ -1,5 +1,2 @@
-
-*.sqlite
-.cache/replit/__replit_disk_meta.json
-.cache/replit/nix/env.json
-.cache/replit/modules.stamp
+.cache/
+.vscode/
