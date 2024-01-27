@@ -1,10 +1,13 @@
-import { toggleMenu } from './app/toggleMenu.js';
-import { phoneInput } from './app/phoneInput.js';
-import { dashboardNavigation } from './app/dashboardNavigation.js';
+import { toggleMenu } from "./app/toggleMenu.js";
+import { phoneInput } from "./app/phoneInput.js";
 
-
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   toggleMenu();
   phoneInput();
-  dashboardNavigation();
+
+  const form = document.querySelector("#form");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
 });
