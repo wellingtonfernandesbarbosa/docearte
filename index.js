@@ -43,6 +43,6 @@ function messageFormatting() {
     Obrigado,
     ${nameInput.value}.`;
 
-  formButton.setAttribute('href', `https://wa.me/5531996964513?text=${message}`);
+  formButton.setAttribute('href', `https://wa.me/5531996464513?text=${message}`);
 }
 
