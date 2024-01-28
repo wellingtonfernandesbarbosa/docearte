@@ -5,7 +5,6 @@ const guestsInput = document.querySelector("#guests");
 const preferencesInput = document.querySelector("#preferences");
 
 const formButton = document.querySelector("#formButton");
-const phoneNumber = 5531996964513;
 
 document.addEventListener("DOMContentLoaded", function () {
   nameInput.addEventListener('input', () => {
@@ -44,6 +43,6 @@ function messageFormatting() {
     Obrigado,
     ${nameInput.value}.`;
 
-  formButton.setAttribute('href', `https://wa.me/${phoneNumber}?text=${message}`);
+  formButton.setAttribute('href', `https://wa.me/5531996964513?text=${message}`);
 }
 
