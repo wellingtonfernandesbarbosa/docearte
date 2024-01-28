@@ -9,8 +9,7 @@
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
   <script src="https://unpkg.com/imask"></script>
-  <script src="index.js" type="module"></script>
-
+  
   <meta property="og:title" content="Doce Arte Confeitaria">
   <meta property="og:description" content="Bolos incríveis para momentos inesquecíveis! Clique aqui para encomendar o seu.">
   <meta property="og:image" content="./assets/favicon/android-chrome-512x512.png">
@@ -73,18 +72,23 @@
     <h2 class="form-title">Fale conosco</h2>
     <form id="form" action="" method="">
       <div class="input-container">
-        <input type="text" name="name" id="name" placeholder="Seu nome" >
-        <input type="email" name="email" id="email" placeholder="Seu email" >
+        <input type="text" name="name" id="name" placeholder="Seu nome">
+        <input type="date" name="date" id="date">
+        <input type="text" name="event" id="event" placeholder="Tipo de Evento (Aniversário/Casamento/Outro)">
+        <input type="number" name="guests" id="guests" placeholder="Número de Convidados">
+        <textarea rows="3" name="preferences" id="preferences" placeholder="Ideias ou Preferências para o Bolo"></textarea>
+
+        <!-- <input type="email" name="email" id="email" placeholder="Seu email" >
         <input type="tel" name="phone" id="phone" placeholder="Seu telefone" >
-        <input type="text" name="whatsApp" id="WhatsApp" placeholder="Seu WhatsApp">
+        <input type="text" name="whatsApp" id="WhatsApp" placeholder="Seu WhatsApp"> -->
       </div>
-      <button type="submit" id="formButton" class="button blackButton formButton">Enviar</button>
+      <a type="submit" id="formButton" class="button blackButton formButton">Enviar</a>
     </form>
   </section>
 
   <footer class="footer" id="contacts">
     <div class="footer-content">
-      <h2 class="company-name company-link-footer">Doce Arte Confeitaria</h2>
+      <a href="#" class="company-name company-link-footer">Doce Arte Confeitaria</a>
       <ul class="footer-links">
         <li><a href="#" class="footer-link">Home</a></li>
         <li><a href="#" class="footer-link">Produtos</a></li>
@@ -103,8 +107,6 @@
       </div>
     </div>
   </footer>
-  <script src='https://cdn.rawgit.com/lagden/vanilla-masker/lagden/build/vanilla-masker.min.js'></script>
-  <!-- <script type="module" src="./app/sendEmail.js"></script> -->
-  <!-- <script src="./app/dashboardNavigation.js"></script> -->
+  <script src="index.js" type="module"></script>
 </body>
 </html>
