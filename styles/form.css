@@ -63,11 +63,10 @@
   .form form {
     width: 90%;
   }
-}
-
-@media screen and (max-width: 900px) {
+  
   .input-container textarea {
     width: 70%;
+    font-size: 0.8em;
   }
 }
 

@@ -128,4 +128,9 @@ header {
   .order-button {
     font-size: 16px;
   }
+
+  .nav-bar {
+    width: 90%;
+    padding: 1em 0;
+  }
 }

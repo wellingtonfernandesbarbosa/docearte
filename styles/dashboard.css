@@ -110,6 +110,14 @@ h1, p {
   padding: 1em;
   background-color: var(--secondary-color-1);
   border-radius: 0.5em;
+  border: 1px solid var(--tertiary-color-2);
+
+}
+
+.calc-option select:focus,
+.calc-option select:hover {
+  border-color: var(--tertiary-color-1);
+  box-shadow: 0 0 5px var(--secondary-color-2);
 }
 
 option {
