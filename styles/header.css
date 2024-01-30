@@ -92,7 +92,19 @@ header {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
+  .nav-bar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 916px) {
+  .nav-bar {
+    width: 95%;
+  }
+}
+
+@media (max-width: 850px) {
   .right-menu {
     display: none;
     flex-direction: column;

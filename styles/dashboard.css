@@ -26,38 +26,13 @@ body {
   max-width: 1280px;
 }
 
-.header-logo, .header-nav {
+.header-logo {
   display: flex;
   justify-content: space-around;
   cursor: pointer;
-}
-
-.header-logo {
   margin-left: 2.5em;
   flex-direction: column;
   gap: 1em;
-}
-
-.header-nav {
-  margin-right: 2.5em;
-  align-items: center;
-}
-
-.header-nav-container {
-  background-color: var(--secondary-color-1);
-  display: flex;
-  border-radius: 45px;
-}
-
-.header-nav p{
-  padding: 1em;
-  border-radius: 45px;
-}
-
-.header-nav-active {
-  background-color: var(--tertiary-color-1);
-  transform: 0.3s;
-  color: var(--secondary-color-1);
 }
 
 h1, p {
@@ -143,10 +118,7 @@ option {
   padding: 0.5em 1.2em;
   border-radius: 0.2em;
   background-color: var(--secondary-color-2);
-}
-
-.hidden {
-  display: none;
+  border: 1px solid var(--tertiary-color-2);
 }
 
 @media (max-width: 1250px){

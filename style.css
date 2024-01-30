@@ -1,53 +1,71 @@
-  @import url('./styles/reset.css');
-  @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
-  @import url('./assets/GothamFont/GothamFont.css');
+@import url('./styles/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('./assets/GothamFont/GothamFont.css');
+@import url('./styles/header.css');
+@import url('./styles/aboutUs.css');
+@import url('./styles/specialOffer.css');
+@import url('./styles/form.css');
+@import url('./styles/footer.css');
 
-  @import url('./styles/header.css');
-  @import url('./styles/aboutUs.css');
-  @import url('./styles/specialOffer.css');
-  @import url('./styles/form.css');
-  @import url('./styles/footer.css');
+:root {
+  --font-clicker: 'Clicker Script', cursive;
+  --font-gotham-pro: 'Gotham Pro', sans-serif;
+  --font-gotham-pro-bold: 'Gotham Pro Bold', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --primary-color: #f1f1f1;
+  --secondary-color-1: #ddfffd;
+  --secondary-color-2: #ffe2ba;
+  --tertiary-color-1: #fa9617;
+  --tertiary-color-2: #431711;
+}
 
-  :root {
-    --font-clicker: 'Clicker Script', cursive;
-    --font-gotham-pro: 'Gotham Pro', sans-serif;
-    --font-gotham-pro-bold: 'Gotham Pro Bold', sans-serif;
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --primary-color: #f1f1f1;
-    --secondary-color-1: #ddfffd;
-    --secondary-color-2: #ffe2ba;
-    --tertiary-color-1: #fa9617;
-    --tertiary-color-2: #431711;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+::-webkit-scrollbar-track {
+  background: var(--secondary-color-1);
+}
 
-  body {
-    background-color: var(--secondary-color-1);
-  }
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color-2);
+}
 
-  a {
-    text-decoration: none;
-    color: #000000;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tertiary-color-2);
+}
 
-  .company-name {
-    font-family: var(--font-clicker);
-    font-size: 48px;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  p, a, span, h1{
-    font-family: var(--font-gotham-pro);
-  }
+body {
+  background-color: var(--secondary-color-1);
+}
 
-  .button {
-    padding: 16px 32px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
+a {
+  text-decoration: none;
+  color: var(--tertiary-color-2);
+}
+
+.company-name {
+  font-family: var(--font-clicker);
+  font-size: 48px;
+}
+
+p,
+a,
+span,
+h1 {
+  font-family: var(--font-gotham-pro);
+}
+
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
 
 .button:hover {
   scale: 1.05;

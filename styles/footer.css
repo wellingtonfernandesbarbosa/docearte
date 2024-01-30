@@ -49,7 +49,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .footer-content{
     padding: 16px 0;
     gap: 16px;
@@ -60,7 +60,7 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 780px) {
   .footer-content{
     flex-direction: column;
   }
