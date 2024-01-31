@@ -233,3 +233,14 @@ const updatePrice = () => {
     sliceNumberPrice) * cakeFloorsPrice;
   resultCalcText.textContent = `R$ ${result.toFixed(2).replace(".", ",")}`;
 };
+
+
+const sendToClientCheckbox = document.getElementById("sendToClient");
+
+sendToClientCheckbox.addEventListener("input", () => {
+  if (sendToClientCheckbox.checked) {
+    document.getElementById("sendBtnClient").style.display = "block";
+  } else {
+    document.getElementById("sendBtnClient").style.display = "none";
+  }
+})

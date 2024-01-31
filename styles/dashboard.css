@@ -51,6 +51,7 @@ h1, p {
   text-align: center;
   font-size: 1.7em;
   color: var(--tertiary-color-2);
+  font-family: var(--font-gotham-pro);
 }
 
 .calc-container {
@@ -78,6 +79,7 @@ h1, p {
 .calc-option label {
   font-size: 1.5em;
   color: var(--tertiary-color-2);
+  font-family: var(--font-gotham-pro);
 }
 
 .calc-option select {
@@ -86,7 +88,7 @@ h1, p {
   background-color: var(--secondary-color-1);
   border-radius: 0.5em;
   border: 1px solid var(--tertiary-color-2);
-
+  font-family: var(--font-gotham-pro);
 }
 
 .calc-option select:focus,
@@ -119,6 +121,66 @@ option {
   border-radius: 0.2em;
   background-color: var(--secondary-color-2);
   border: 1px solid var(--tertiary-color-2);
+}
+
+.sendInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.sendInformation__checkbox__input {
+  display: none;
+}
+
+.sendInformation__checkbox__input+label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-gotham-pro);
+}
+
+.sendInformation__checkbox__input+label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--tertiary-color-2);
+}
+
+.sendInformation__checkbox__input:checked+label:before {
+  background-color: var(--tertiary-color-2);
+  border-color: var(--tertiary-color-2);
+}
+
+.sendInformation__input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  border-bottom: 2px solid var(--tertiary-color-2);
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.sendInformation__input:focus {
+  outline: none;
+}
+
+.sendInformation__input::placeholder {
+  font-family: var(--font-gotham-pro);
+}
+
+#sendBtnClient {
+  display: none;
+}
+
+.sendInformation__button {
+  width: 60%;
 }
 
 @media (max-width: 1250px){
@@ -315,7 +377,7 @@ option {
   }
 
   .calc {
-    margin: 2em 0 0;
+    margin: 2em 0;
   }
 
   .resultCalc {
@@ -326,4 +388,13 @@ option {
     padding: 0.4em 0.8em;
     font-size: 2.5em;
   }
+
+  .sendInformation__checkbox {
+    margin: 0 1em;
+  }
+
+  .sendInformation__input {
+    width: 85%;
+  }
+
 }

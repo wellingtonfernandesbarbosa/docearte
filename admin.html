@@ -22,7 +22,7 @@
   <title>Doce Arte - Admin</title>
 </head>
 
-<body>
+<body oncontextmenu="return false">
   <header class="header__container">
     <div class="header">
       <div class="header-logo">
@@ -111,6 +111,19 @@
 
       <div class="resultCalc">
         <p class="resultCalc__text" id="resultCalcText">R$ 00,00</p>
+      </div>
+
+      <div class="sendInformation">
+        <div class="sendInformation__checkbox">
+          <input class="sendInformation__checkbox__input" type="checkbox" name="sendToClient" id="sendToClient">
+          <label for="sendToClient" class="sendInformation__checkbox__label">Deseja enviar o orçamento para o(a) cliente?</label>
+        </div>
+
+        <input class="sendInformation__input" type="text" name="name" id="name" placeholder="Nome do(a) cliente" required>
+        <input class="sendInformation__input" type="tel" name="tel" id="tel" placeholder="Telefone do(a) cliente" id="">
+
+        <a href="#" class="button blackButton sendInformation__button" id="sendBtnClient">Enviar para o(a) cliente</a>
+        <a href="#" class="button blackButton sendInformation__button" id="sendBtn">Enviar</a>
       </div>
     </div>
   </section>
