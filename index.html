@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
+
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
@@ -9,9 +10,10 @@
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
   <script src="https://unpkg.com/imask"></script>
-  
+
   <meta property="og:title" content="Doce Arte Confeitaria">
-  <meta property="og:description" content="Bolos incríveis para momentos inesquecíveis! Clique aqui para encomendar o seu.">
+  <meta property="og:description"
+    content="Bolos incríveis para momentos inesquecíveis! Clique aqui para encomendar o seu.">
   <meta property="og:image" content="./assets/favicon/android-chrome-512x512.png">
   <meta property="og:url" content="https://docearte.vercel.app/">
   <meta property="og:type" content="website">
@@ -48,7 +50,10 @@
 
   <section class="aboutUs" id="aboutUs">
     <h2 class="aboutUs-title">Sobre Nós</h2>
-    <p class="aboutUs-text">Nos especializamos em fazer bolos extraordinários que não são apenas deliciosos, mas também verdadeiras obras de arte. Com uma paixão inigualável pela confeitaria, cada bolo que criamos conta uma história única. Seja para ocasiões especiais ou simplesmente para adoçar o seu dia, nossa missão é trazer alegria através da magia da confeitaria. Conheça a Doce Arte e permita-nos tornar seus momentos mais doces e memoráveis.</p>
+    <p class="aboutUs-text">Nos especializamos em fazer bolos extraordinários que não são apenas deliciosos, mas também
+      verdadeiras obras de arte. Com uma paixão inigualável pela confeitaria, cada bolo que criamos conta uma história
+      única. Seja para ocasiões especiais ou simplesmente para adoçar o seu dia, nossa missão é trazer alegria através
+      da magia da confeitaria. Conheça a Doce Arte e permita-nos tornar seus momentos mais doces e memoráveis.</p>
     <hr>
     <h2 class="company-name company-name-aboutUs">Doce Arte</h2>
   </section>
@@ -76,7 +81,8 @@
         <input type="text" name="date" id="date" onfocus="(this.type='date')" placeholder="Data do Evento">
         <input type="text" name="event" id="event" placeholder="Tipo de Evento (Aniversário/Casamento/Outro)">
         <input type="number" name="guests" id="guests" placeholder="Número de Convidados">
-        <textarea rows="3" name="preferences" id="preferences" placeholder="Ideias ou Preferências para o Bolo"></textarea>
+        <textarea rows="3" name="preferences" id="preferences"
+          placeholder="Ideias ou Preferências para o Bolo"></textarea>
       </div>
       <a type="submit" id="formButton" class="button blackButton formButton">Enviar</a>
     </form>
@@ -104,23 +110,6 @@
     </div>
   </footer>
   <script src="./app/formMessage.js"></script>
-  <script>
-    function formatDate(input) {
-      // Obtém o valor inserido pelo usuário
-      let inputValue = input.value;
-
-      // Verifica se o valor tem o formato esperado (dd-mm-yyyy)
-      if (/^\d{2}-\d{2}-\d{4}$/.test(inputValue)) {
-        // Se estiver correto, não faz nada
-      } else {
-        // Se não estiver correto, tenta ajustar para o formato correto
-        let dateArray = inputValue.split('-');
-        if (dateArray.length === 3) {
-          inputValue = `${dateArray[2]}-${dateArray[1]}-${dateArray[0]}`;
-          input.value = inputValue;
-        }
-      }
-    }
-  </script>
 </body>
+
 </html>
