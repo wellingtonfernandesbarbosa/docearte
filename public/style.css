@@ -1,5 +1,6 @@
-@import url('./styles/reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+@import url('./styles/reset.css');
 @import url('./assets/GothamFont/GothamFont.css');
 @import url('./styles/header.css');
 @import url('./styles/aboutUs.css');
