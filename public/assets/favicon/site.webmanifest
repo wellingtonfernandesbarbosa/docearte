@@ -2,7 +2,7 @@
   "name": "Doce Arte Confeitaria",
   "short_name": "docearte",
   "id": "/public/assets/favicon/site.webmanifest",
-  "start_url": "/public/index.html",
+  "start_url": "../../index.html",
   "description": "The Doce Arte Confectionery Home Page is an interactive platform for users to explore products, learn about the confectionery, access special offers, and order custom cakes. Built with HTML, CSS, and TypeScript.",
   "display": "standalone",
   "theme_color": "#431711",
