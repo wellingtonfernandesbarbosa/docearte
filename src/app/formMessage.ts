@@ -6,19 +6,25 @@ const preferencesInput = document.querySelector("#preferences") as HTMLTextAreaE
 
 const formButton = document.querySelector("#formButton") as HTMLAnchorElement;
 
+const menuToggle = document.querySelector(".menu-toggle") as HTMLDivElement;
+
 document.addEventListener("DOMContentLoaded", () => {
+  menuToggle.addEventListener("click", () => {
+    console.log("oi");
+  })
+
   nameInput.addEventListener('input', () => {
     messageFormatting();
   })
-  
+
   dateInput.addEventListener('input', () => {
     messageFormatting();
   })
-  
+
   eventInput.addEventListener('input', () => {
     messageFormatting();
   })
-  
+
   guestsInput.addEventListener('input', () => {
     messageFormatting();
   })
@@ -34,25 +40,21 @@ function messageFormatting(): void {
     Estou interessado em encomendar um bolo para uma ocasião especial. 
     Aqui estão os detalhes: 
     
-    ${
-      eventInput.value != ""
-        ? `Tipo de evento: ${eventInput.value},  `
-        : "Tipo de evento: Não informado, "
+    ${eventInput.value != ""
+      ? `Tipo de evento: ${eventInput.value},  `
+      : "Tipo de evento: Não informado, "
     }
-    ${
-      dateInput.value != ""
-        ? `Data do evento: ${dateInput.value}, `
-        : "Data do evento: Não informado, "
+    ${dateInput.value != ""
+      ? `Data do evento: ${dateInput.value}, `
+      : "Data do evento: Não informado, "
     }
-    ${
-      guestsInput.value != ""
-        ? `Número de convidados: ${guestsInput.value}, `
-        : "Numero de convidados: Não informado, "
+    ${guestsInput.value != ""
+      ? `Número de convidados: ${guestsInput.value}, `
+      : "Numero de convidados: Não informado, "
     }
-    ${
-      preferencesInput.value != ""
-        ? `Ideias ou preferências para o bolo: ${preferencesInput.value}. `
-        : "Ideias ou preferências para o bolo: Não informado."
+    ${preferencesInput.value != ""
+      ? `Ideias ou preferências para o bolo: ${preferencesInput.value}. `
+      : "Ideias ou preferências para o bolo: Não informado."
     }
 
     Gostaria de saber se vocês têm disponibilidade para essa data e um orçamento aproximado. Fico no aguardo de sua resposta!
@@ -63,3 +65,5 @@ function messageFormatting(): void {
 
   formButton.setAttribute('href', `https://wa.me/5531996464513?text=${message}`);
 }
+
+

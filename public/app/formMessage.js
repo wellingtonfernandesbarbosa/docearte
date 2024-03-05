@@ -5,7 +5,11 @@ const eventInput = document.querySelector("#event");
 const guestsInput = document.querySelector("#guests");
 const preferencesInput = document.querySelector("#preferences");
 const formButton = document.querySelector("#formButton");
+const menuToggle = document.querySelector(".menu-toggle");
 document.addEventListener("DOMContentLoaded", () => {
+    menuToggle.addEventListener("click", () => {
+        console.log("oi");
+    });
     nameInput.addEventListener('input', () => {
         messageFormatting();
     });
