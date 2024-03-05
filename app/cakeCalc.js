@@ -158,47 +158,47 @@ let cakeTypePrice = cakeTypePriceTable[0];
 let cakeFillingPrice = cakeFillingPriceTable[0];
 let cakeFilling2Price = cakeFilling2PriceTable[0];
 let additionOfFruitsPrice = additionOfFruitsPriceTable[0];
-let cakeFloorsPrice = 1.4;
+let cakeFloorsPrice = 1;
 let sliceNumberPrice = 15;
+const formatMoney = (value) => {
+    return new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+    }).format(value);
+};
+const formatPhone = (value) => {
+    return value.replace(/[^0-9]/g, "");
+};
 cakeType.addEventListener("input", () => {
     const cakeTypeSelected = cakeType.value.toLowerCase();
-    cakeTypePriceTable.forEach((cake) => {
-        if (cake.description.toLowerCase() === cakeTypeSelected) {
-            cakeTypePrice = cake;
-        }
-    });
+    cakeTypePrice = cakeTypePriceTable.find(cake => cake.description.toLowerCase() === cakeTypeSelected);
     updatePrice();
 });
 cakeFilling.addEventListener("input", () => {
     const cakeFillingSelected = cakeFilling.value.toLowerCase();
-    cakeFillingPriceTable.forEach((filling) => {
-        if (filling.description.toLowerCase() === cakeFillingSelected) {
-            console.log(cakeFillingSelected);
-            cakeFillingPrice = filling;
-        }
-    });
+    cakeFillingPrice = cakeFilling2PriceTable.find(filling => filling.description.toLowerCase() === cakeFillingSelected);
     updatePrice();
 });
 cakeFilling2.addEventListener("input", () => {
     const cakeFilling2Selected = cakeFilling2.value.toLowerCase();
-    cakeFilling2PriceTable.forEach((filling) => {
-        if (filling.description.toLowerCase() === cakeFilling2Selected) {
-            cakeFilling2Price = filling;
-        }
-    });
+    cakeFilling2Price = cakeFilling2PriceTable.find(filling => filling.description.toLowerCase() === cakeFilling2Selected);
     updatePrice();
 });
 additionOfFruits.addEventListener("input", () => {
     const additionOfFruitsSelected = additionOfFruits.value.toLowerCase();
-    additionOfFruitsPriceTable.forEach((frute) => {
-        if (frute.description.toLowerCase() === additionOfFruitsSelected) {
-            additionOfFruitsPrice = frute;
-        }
-    });
+    additionOfFruitsPrice = additionOfFruitsPriceTable.find(frute => frute.description.toLowerCase() === additionOfFruitsSelected);
     updatePrice();
 });
 cakeFloors.addEventListener("input", () => {
-    cakeFloorsPrice = parseInt(cakeFloors.value);
+    if (cakeFloors.value === "1") {
+        cakeFloorsPrice = 1;
+    }
+    else if (cakeFloors.value === "2") {
+        cakeFloorsPrice = 1.4;
+    }
+    else if (cakeFloors.value === "3") {
+        cakeFloorsPrice = 1.8;
+    }
     updatePrice();
 });
 sliceNumber.addEventListener('input', () => {
@@ -207,17 +207,9 @@ sliceNumber.addEventListener('input', () => {
 });
 const sendInformation = document.querySelector('.sendInformation');
 sendInformation.style.display = 'none';
-const updatePrice = () => {
-    const result = ((cakeTypePrice.price +
-        cakeFillingPrice.price +
-        cakeFilling2Price.price +
-        additionOfFruitsPrice.price) *
-        sliceNumberPrice) * cakeFloorsPrice;
-    sendInformation.style.display = 'flex';
-    resultCalcText.textContent = `R$ ${result.toFixed(2).replace(".", ",")}`;
-};
-const sendToClientCheckbox = document.getElementById("sendToClient");
 const btnSendToClient = document.getElementById("sendBtnClient");
+const btnSendToCompany = document.querySelector("#sendBtnCompany");
+const sendToClientCheckbox = document.getElementById("sendToClient");
 sendToClientCheckbox.addEventListener("input", () => {
     if (sendToClientCheckbox.checked) {
         btnSendToClient.style.display = "block";
@@ -226,3 +218,48 @@ sendToClientCheckbox.addEventListener("input", () => {
         btnSendToClient.style.display = "none";
     }
 });
+const clientNameInput = document.querySelector('#clientName');
+let clientName = '';
+clientNameInput.addEventListener('input', () => {
+    clientName = clientNameInput.value;
+});
+const clientPhoneInput = document.querySelector('#clientPhone');
+let clientPhone = '';
+clientPhoneInput.addEventListener('input', () => {
+    clientPhone = clientPhoneInput.value;
+});
+const updatePrice = () => {
+    const cakeTotalPrice = ((cakeTypePrice.price +
+        cakeFillingPrice.price +
+        cakeFilling2Price.price +
+        additionOfFruitsPrice.price) *
+        sliceNumberPrice) * cakeFloorsPrice;
+    console.log(companyMessage(cakeTotalPrice));
+    sendInformation.style.display = 'flex';
+    if (sendToClientCheckbox.checked) {
+        console.log(clientMessage(cakeTotalPrice));
+        btnSendToClient.href = `https://wa.me/${formatPhone(clientPhone)}?text=${companyMessage(cakeTotalPrice)}`;
+    }
+    resultCalcText.textContent = `${formatMoney(cakeTotalPrice)}`;
+};
+const companyMessage = (cakeTotalPrice) => {
+    return `Orçamento do(a) ${clientName} com telefone https://wa.me/${formatPhone(clientPhone)}. 
+  Tipo de bolo: ${cakeType.value} (R$ ${formatMoney(cakeTypePrice.price)}),
+  Recheio: ${cakeFilling.value} (R$ ${formatMoney(cakeFillingPrice.price)}),
+  Recheio adicional: ${cakeFilling2.value} (R$ ${formatMoney(cakeFilling2Price.price)}),
+  Adicional de frutas: ${additionOfFruits.value} (R$ ${formatMoney(additionOfFruitsPrice.price)}),
+  ${cakeFloors.value === "1" ? "Andar" : "Andares"}: ${cakeFloors.value} (R$ ${formatMoney(cakeFloorsPrice)}),
+  Fatias: ${sliceNumber.value} (R$ ${formatMoney(sliceNumberPrice)}),
+  Total: (R$ ${formatMoney(cakeTotalPrice)})`;
+};
+const clientMessage = (cakeTotalPrice) => {
+    return `Olá ${clientName}, segue a descrição do orçamento: 
+    Bolo do tipo ${cakeType.value} 
+    com recheio de ${cakeFilling.value}
+    ${cakeFilling2.value !== "" ? ` recheio adicional de ${cakeFilling2.value}` : ""}
+    ${additionOfFruits.value !== "" ? ` com acréscimo de ${additionOfFruits.value}` : ""}.
+    O bolo terá ${cakeFloors.value} ${cakeFloors.value === "1" ? "andar" : "andares"} 
+    e poderá ser servido em ${sliceNumberPrice} fatias. 
+    O valor total do bolo ficou em R$ ${formatMoney(cakeTotalPrice)}.
+    `;
+};

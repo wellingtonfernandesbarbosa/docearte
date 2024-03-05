@@ -42,17 +42,17 @@
 
         <label for="cakeType">Decoração do bolo</label>
         <select name="cakeType" id="cakeType">
+          <option value="bolo decorado com chantilly">Bolo decorado com Chantilly</option>
           <option value="nacked cake">Nacked Cake</option>
           <option value="bolo vulcão">Bolo Vulcão</option>
-          <option value="bolo decorado com chantilly">Bolo decorado com Chantilly</option>
           <option value="bolo decorado com chantininho">Bolo decorado com Chantininho</option>
           <option value="bolo decorado com brigadeiro">Bolo decorado com Brigadeiro</option>
         </select>
 
         <label for="cakeFilling">Escolha o 1º recheio</label>
         <select name="cakeFilling" id="cakeFilling">
-          <option value="côco">Côco</option>
           <option value="brigadeiro comum">Brigadeiro comum</option>
+          <option value="côco">Côco</option>
           <option value="brigadeiro branco">Brigadeiro branco</option>
           <option value="ninho">Ninho</option>
           <option value="doce de leite">Doce de leite</option>
@@ -116,18 +116,22 @@
       <div class="sendInformation">
         <div class="sendInformation__checkbox">
           <input class="sendInformation__checkbox__input" type="checkbox" name="sendToClient" id="sendToClient">
-          <label for="sendToClient" class="sendInformation__checkbox__label">Deseja enviar o orçamento para o(a) cliente?</label>
+          <label for="sendToClient" class="sendInformation__checkbox__label">Deseja enviar o orçamento para o(a)
+            cliente?</label>
         </div>
 
-        <input class="sendInformation__input" type="text" name="name" id="name" placeholder="Nome do(a) cliente" required>
-        <input class="sendInformation__input" type="tel" name="tel" id="tel" placeholder="Telefone do(a) cliente" id="">
+        <input class="sendInformation__input" type="text" name="name" id="clientName" placeholder="Nome do(a) cliente"
+          required>
+        <input class="sendInformation__input" type="tel" name="tel" id="clientPhone"
+          placeholder="Telefone do(a) cliente" id="">
 
-        <a href="#" class="button blackButton sendInformation__button" id="sendBtnClient">Enviar para o(a) cliente</a>
-        <a href="#" class="button blackButton sendInformation__button" id="sendBtn">Enviar</a>
+        <a href="#" class="button blackButton sendInformation__button" id="sendBtnClient">Enviar para
+          o(a) cliente</a>
+        <a href="#" class="button blackButton sendInformation__button" id="sendBtnCompany">Enviar</a>
       </div>
     </div>
   </section>
-  <script src="./app/cakeCalc.js"></script>
+  <script src="./app/cakeCalc.js" type="module"></script>
 </body>
 
 </html>
