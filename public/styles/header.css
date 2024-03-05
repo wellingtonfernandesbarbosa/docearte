@@ -18,7 +18,8 @@ header {
   color: var(--tertiary-color-2)
 }
 
-.show, .right-menu li {
+.show,
+.right-menu li {
   background-color: var(--secondary-color-1);
 }
 
@@ -76,7 +77,8 @@ header {
   transform: translateY(-50%);
 }
 
-.order-title, .order-button {
+.order-title,
+.order-button {
   text-align: center;
   z-index: 1;
 }
@@ -105,6 +107,15 @@ header {
 }
 
 @media (max-width: 850px) {
+
+  .orderCake {
+    background-image: url("../assets/img/banner-header_768.webp");
+  }
+
+  .orderCake::before {
+    background: url("../assets/img/banner-header_768.webp") center/cover;
+  }
+
   .right-menu {
     display: none;
     flex-direction: column;
@@ -131,6 +142,11 @@ header {
 @media (max-width: 490px) {
   .orderCake {
     height: 300px;
+    background-image: url("../assets/img/banner-header_435.webp");
+  }
+
+  .orderCake::before {
+    background: url("../assets/img/banner-header_435.webp") center/cover;
   }
 
   .order-title {

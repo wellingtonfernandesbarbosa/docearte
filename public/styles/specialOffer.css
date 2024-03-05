@@ -37,11 +37,11 @@
 
 .specialOffer_image {
   box-sizing: border-box;
-}
-
-.specialOffer_image img{
+  background-image: url('../assets/img/nakedCake.webp');
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 @media (max-width: 1282px) {
@@ -65,9 +65,23 @@
   }
 }
 
+@media (max-width: 768px) {
+  .specialOffer_image {
+    background-image: url('../assets/img/nakedCake_768.webp');
+    height: 350px;
+  }
+}
+
 @media (max-width: 617px) {
   .specialOffer-card {
     padding: 1.5em;
     gap: 1em;
+  }
+}
+
+@media (max-width: 435px) {
+  .specialOffer_image {
+    background-image: url('../assets/img/nakedCake_435.webp');
+    height: 250px;
   }
 }

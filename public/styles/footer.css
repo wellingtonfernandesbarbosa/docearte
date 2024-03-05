@@ -17,7 +17,8 @@
   gap: 16px;
 }
 
-.company-link-footer, .footer-link {
+.company-link-footer,
+.footer-link {
   color: var(--primary-color);
 }
 
@@ -50,7 +51,7 @@
 
 
 @media (max-width: 930px) {
-  .footer-content{
+  .footer-content {
     padding: 16px 0;
     gap: 16px;
   }
@@ -61,7 +62,7 @@
 }
 
 @media (max-width: 780px) {
-  .footer-content{
+  .footer-content {
     flex-direction: column;
   }
 

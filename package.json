@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "homepage": "https://docearte.vercel.app/",
-  "description": "I developed the Home Page for Doce Arte Confectionery, a project that offers an interactive experience, allowing users to explore products, learn more about the confectionery, take advantage of special offers, and contact to order custom cakes. A achievement highlighting my ability to create attractive and functional interfaces. The technologies used were HTML, CSS, and TypeScript.",
+  "description": "The Doce Arte Confectionery Home Page is an interactive platform for users to explore products, learn about the confectionery, access special offers, and order custom cakes. Built with HTML, CSS, and TypeScript.",
   "keywords": [],
   "author": "Wellington Fernandes",
   "license": "ISC",
