@@ -6,12 +6,7 @@ const preferencesInput = document.querySelector("#preferences") as HTMLTextAreaE
 
 const formButton = document.querySelector("#formButton") as HTMLAnchorElement;
 
-const menuToggle = document.querySelector(".menu-toggle") as HTMLDivElement;
-
 document.addEventListener("DOMContentLoaded", () => {
-  menuToggle.addEventListener("click", () => {
-    console.log("oi");
-  })
 
   nameInput.addEventListener('input', () => {
     messageFormatting();

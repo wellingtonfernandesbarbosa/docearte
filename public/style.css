@@ -83,3 +83,9 @@ h1 {
   border: 2px solid var(--primary-color);
   background: var(--tertiary-color-2);
 }
+
+@media (max-width: 450px) {
+  .company-name {
+    font-size: 32px;
+  }
+}
