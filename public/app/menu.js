@@ -2,21 +2,21 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector("#right-menu");
 const menuLinks = document.querySelectorAll("#right-menu li a");
-console.log(menuToggle);
-console.log(menu);
+const screenWidth = window.innerWidth;
 const isClickInsideMenu = (event) => {
     return menu?.contains(event.target) || menuToggle?.contains(event.target);
 };
 menuToggle?.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    if (screenWidth <= 850)
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 });
 window.addEventListener('click', (event) => {
-    if (!isClickInsideMenu(event)) {
+    if (screenWidth <= 850 && !isClickInsideMenu(event)) {
         menu.style.display = 'none';
     }
 });
 menuLinks.forEach((link) => {
-    link.addEventListener('click', () => {
+    screenWidth <= 850 && link.addEventListener('click', () => {
         menu.style.display = 'none';
     });
 });
