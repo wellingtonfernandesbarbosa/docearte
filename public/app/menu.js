@@ -1,9 +1,8 @@
-"use strict";
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector("#right-menu");
 const menuLinks = document.querySelectorAll("#right-menu li a");
 const screenWidth = window.innerWidth;
-const isClickInsideMenu = (event) => {
+export const isClickInsideMenu = (event) => {
     return menu?.contains(event.target) || menuToggle?.contains(event.target);
 };
 menuToggle?.addEventListener('click', () => {

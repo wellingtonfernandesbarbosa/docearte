@@ -6,28 +6,30 @@ const preferencesInput = document.querySelector("#preferences") as HTMLTextAreaE
 
 const formButton = document.querySelector("#formButton") as HTMLAnchorElement;
 
-document.addEventListener("DOMContentLoaded", () => {
+export const formMessage = (): void => {
+  document.addEventListener("DOMContentLoaded", () => {
 
-  nameInput.addEventListener('input', () => {
-    messageFormatting();
-  })
+    nameInput.addEventListener('input', () => {
+      messageFormatting();
+    })
 
-  dateInput.addEventListener('input', () => {
-    messageFormatting();
-  })
+    dateInput.addEventListener('input', () => {
+      messageFormatting();
+    })
 
-  eventInput.addEventListener('input', () => {
-    messageFormatting();
-  })
+    eventInput.addEventListener('input', () => {
+      messageFormatting();
+    })
 
-  guestsInput.addEventListener('input', () => {
-    messageFormatting();
-  })
+    guestsInput.addEventListener('input', () => {
+      messageFormatting();
+    })
 
-  preferencesInput.addEventListener("input", () => {
-    messageFormatting();
+    preferencesInput.addEventListener("input", () => {
+      messageFormatting();
+    });
   });
-});
+}
 
 function messageFormatting(): void {
   const message: string = `Olá Doce Artes!
