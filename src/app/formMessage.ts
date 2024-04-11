@@ -42,7 +42,7 @@ function messageFormatting(): void {
       : "Tipo de evento: Não informado, "
     }
     ${dateInput.value != ""
-      ? `Data do evento: ${dateInput.value}, `
+    ? `Data do evento: ${new Date(dateInput.value).toLocaleDateString()}, `
       : "Data do evento: Não informado, "
     }
     ${guestsInput.value != ""
@@ -60,7 +60,7 @@ function messageFormatting(): void {
     ${nameInput.value}.`;
   ;
 
-  formButton.setAttribute('href', `https://wa.me/5531996464513?text=${message}`);
+  formButton.setAttribute('href', `https://wa.me/+5531997706644?text=${message}`);
 }
 
 

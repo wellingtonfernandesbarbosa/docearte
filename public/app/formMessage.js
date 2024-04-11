@@ -33,7 +33,7 @@ function messageFormatting() {
         ? `Tipo de evento: ${eventInput.value},  `
         : "Tipo de evento: Não informado, "}
     ${dateInput.value != ""
-        ? `Data do evento: ${dateInput.value}, `
+        ? `Data do evento: ${new Date(dateInput.value).toLocaleDateString()}, `
         : "Data do evento: Não informado, "}
     ${guestsInput.value != ""
         ? `Número de convidados: ${guestsInput.value}, `
@@ -47,5 +47,5 @@ function messageFormatting() {
     Obrigado(a),
     ${nameInput.value}.`;
     ;
-    formButton.setAttribute('href', `https://wa.me/5531996464513?text=${message}`);
+    formButton.setAttribute('href', `https://wa.me/+5531997706644?text=${message}`);
 }
