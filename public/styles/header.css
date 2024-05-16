@@ -8,10 +8,10 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  width: 80%;
-  padding: 16px;
-  margin: 0 auto;
   max-width: 1280px;
+  padding: 24px 0;
+  margin: 0 auto;
+  /* max-width: 1280px; */
 }
 
 .company-link-header {
@@ -25,13 +25,15 @@ header {
 
 .right-menu {
   display: flex;
-  list-style: none;
-  padding: 16px 16px 16px 8px;
+  gap: 16px;
 }
 
-.right-menu li {
-  padding: 16px 0px 16px 16px;
+.right-menu li a {
   text-transform: uppercase;
+}
+
+.right-menu li a:hover {
+  color: var(--tertiary-color-1);
 }
 
 .left-menu {
@@ -40,7 +42,10 @@ header {
 
 .menu-toggle {
   display: none;
+  flex-direction: column;
+  gap: 10px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-toggle span {
@@ -48,33 +53,23 @@ header {
   height: 3px;
   width: 35px;
   background-color: #333;
-  margin: 10px 0;
 }
 
 .orderCake {
+  background-image: url('../assets/img/banner-header_1440.webp');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.orderCake-content {
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 40vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 4rem;
-  background-image: url('../assets/img/banner-header_1440.webp');
-  background-size: cover;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.orderCake::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: url('../assets/img/banner-header_1440.webp') center/cover;
-  filter: blur(250px);
-  transform: translateY(-50%);
 }
 
 .order-title,
@@ -94,40 +89,34 @@ header {
   color: #fff;
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1312px) {
   .nav-bar {
-    width: 90%;
+    padding: 24px 16px;
   }
 }
 
-@media (max-width: 916px) {
-  .nav-bar {
-    width: 95%;
-  }
-}
-
-@media (max-width: 850px) {
-  
+@media (max-width: 900px) {
   .orderCake {
     background-image: url("../assets/img/banner-header_768.webp");
   }
-  
-  .orderCake::before {
-    background: url("../assets/img/banner-header_768.webp") center/cover;
+
+  .orderCake-content {
+    height: 50vw;
   }
 
   .right-menu {
     display: none;
     flex-direction: column;
+    font-size: 20px;
     background-color: var(--secondary-color-1);
-    gap: 8px;
+    padding: 20px;
+    gap: 20px;
     position: absolute;
-    top: 70px;
+    top: 96px;
     right: 0px;
-    width: 30%;
     z-index: 2;
   }
-  
+
   .right-menu.show {
     display: flex;
   }
@@ -137,21 +126,24 @@ header {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 }
 
 @media (max-width: 600px) {
-  .right-menu {
-    width: 37%;    
+  .orderCake-content {
+    height: 60vw;
   }
 }
 
 @media (max-width: 490px) {
+  .orderCake-content {
+    height: 100%;
+  }
 
   .right-menu {
     width: 50%;
-    top: 80px;
+    top: 63px;
   }
 
   .orderCake {
@@ -174,11 +166,5 @@ header {
   .nav-bar {
     width: 90%;
     padding: 1em 0;
-  }
-}
-
-@media (max-width: 390px) {
-  .right-menu {
-    width: 57%;
   }
 }
