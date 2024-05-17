@@ -17,9 +17,16 @@
   gap: 16px;
 }
 
-.company-link-footer,
+.company-link-footer {
+  color: var(--tertiary-color-1);
+}
+
 .footer-link {
   color: var(--primary-color);
+}
+
+.footer-link:hover {
+  color: var(--tertiary-color-1);
 }
 
 .social-media {
