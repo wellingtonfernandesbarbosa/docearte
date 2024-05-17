@@ -1,5 +1,5 @@
 header {
-  background-color: var(--secondary-color-1);
+  background-color: var(--tertiary-color-2);
   width: 100%;
 }
 
@@ -11,16 +11,15 @@ header {
   max-width: 1280px;
   padding: 24px 0;
   margin: 0 auto;
-  /* max-width: 1280px; */
 }
 
 .company-link-header {
-  color: var(--tertiary-color-2)
+  color: var(--tertiary-color-1)
 }
 
 .show,
 .right-menu li {
-  background-color: var(--secondary-color-1);
+  background-color: var(--tertiary-color-2);
 }
 
 .right-menu {
@@ -29,6 +28,7 @@ header {
 }
 
 .right-menu li a {
+  color: white;
   text-transform: uppercase;
 }
 
@@ -52,19 +52,20 @@ header {
   display: block;
   height: 3px;
   width: 35px;
-  background-color: #333;
+  background-color: var(--tertiary-color-1);
 }
 
 .orderCake {
   background-image: url('../assets/img/banner-header_1440.webp');
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
 .orderCake-content {
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(1px);
   width: 100%;
-  height: 40vw;
+  height: 35vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,8 +81,8 @@ header {
 
 .order-title {
   font-family: var(--font-clicker);
-  color: #000000;
-  font-size: 48px;
+  color: var(--tertiary-color-2);
+  font-size: 52px;
 }
 
 .order-button:active {
@@ -91,7 +92,11 @@ header {
 
 @media (max-width: 1312px) {
   .nav-bar {
-    padding: 24px 16px;
+    padding: 18px 16px;
+  }
+
+  .orderCake-content {
+    height: 40vw;
   }
 }
 
@@ -108,13 +113,14 @@ header {
     display: none;
     flex-direction: column;
     font-size: 20px;
-    background-color: var(--secondary-color-1);
+    background-color: var(--tertiary-color-2);
     padding: 20px;
     gap: 20px;
     position: absolute;
-    top: 96px;
+    top: 84px;
     right: 0px;
     z-index: 2;
+    border-bottom: 3px solid var(--tertiary-color-1);
   }
 
   .right-menu.show {
@@ -141,18 +147,16 @@ header {
     height: 100%;
   }
 
+  .orderCake {
+    background-image: url("../assets/img/banner-header_435.webp");
+  }
+
   .right-menu {
-    width: 50%;
-    top: 63px;
+    top: 79px;
   }
 
   .orderCake {
     height: 300px;
-    background-image: url("../assets/img/banner-header_435.webp");
-  }
-
-  .orderCake::before {
-    background: url("../assets/img/banner-header_435.webp") center/cover;
   }
 
   .order-title {
@@ -167,4 +171,12 @@ header {
     width: 90%;
     padding: 1em 0;
   }
+}
+
+/* media 450 */
+
+@media (max-width: 450px) {
+  .right-menu {
+      top: 63px;
+    }
 }
