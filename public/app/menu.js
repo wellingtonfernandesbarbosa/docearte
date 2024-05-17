@@ -6,7 +6,7 @@ export const isClickInsideMenu = (event) => {
     return menu?.contains(event.target) || menuToggle?.contains(event.target);
 };
 menuToggle?.addEventListener('click', () => {
-    if (screenWidth <= 850)
+    if (screenWidth <= 900)
         menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 });
 window.addEventListener('click', (event) => {
@@ -18,4 +18,7 @@ menuLinks.forEach((link) => {
     screenWidth <= 850 && link.addEventListener('click', () => {
         menu.style.display = 'none';
     });
+});
+menuToggle.addEventListener("click", () => {
+    navigator.vibrate && navigator.vibrate(50);
 });

@@ -13,13 +13,9 @@ header {
   margin: 0 auto;
 }
 
-.company-link-header {
+.company-link-header,.show,
+.right-menu li a {
   color: var(--tertiary-color-1)
-}
-
-.show,
-.right-menu li {
-  background-color: var(--tertiary-color-2);
 }
 
 .right-menu {
@@ -28,7 +24,6 @@ header {
 }
 
 .right-menu li a {
-  color: white;
   text-transform: uppercase;
 }
 
@@ -168,12 +163,9 @@ header {
   }
 
   .nav-bar {
-    width: 90%;
-    padding: 1em 0;
+    padding: 1em;
   }
 }
-
-/* media 450 */
 
 @media (max-width: 450px) {
   .right-menu {

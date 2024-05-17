@@ -8,7 +8,7 @@ export const isClickInsideMenu = (event: MouseEvent | TouchEvent) => {
 }
 
 menuToggle?.addEventListener('click', () => {
-  if (screenWidth <= 850) menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  if (screenWidth <= 900) menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 });
 
 window.addEventListener('click', (event) => {
@@ -21,4 +21,8 @@ menuLinks.forEach((link) => {
   screenWidth <= 850 && link.addEventListener('click', () => {
     menu.style.display = 'none';
   });
+})
+
+menuToggle.addEventListener("click", () => {
+  navigator.vibrate && navigator.vibrate(50);
 })
