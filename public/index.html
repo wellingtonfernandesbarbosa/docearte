@@ -151,11 +151,19 @@
     <form id="form" action="" method="">
       <div class="input-container">
         <input type="text" name="name" id="name" placeholder="Seu nome" required>
-        <input type="text" name="date" id="date" onfocus="(this.type='date')" placeholder="Data do Evento">
-        <input type="text" name="event" id="event" placeholder="Tipo de Evento (Aniversário/Casamento/Outro)">
+        <input type="date" name="date" id="date" onfocus="" placeholder="Data do Evento">
+        <div class="select-container">
+          <label for="event">Tipo de evento:</label>
+          <select name="event" id="event" required>
+            <option value="Aniversário" selected>Aniversário</option>
+            <option value="Casamento">Casamento</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
         <input type="number" name="guests" id="guests" placeholder="Número de Convidados">
         <textarea rows="3" name="preferences" id="preferences"
-          placeholder="Ideias ou Preferências para o Bolo"></textarea>
+          placeholder="Personalize seu pedido com bolos, doces e bombons">
+        </textarea>
       </div>
       <a type="submit" id="formButton" class="button blackButton formButton">Enviar</a>
     </form>

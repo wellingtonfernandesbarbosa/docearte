@@ -32,8 +32,8 @@
   border: none;
   padding: 8px;
   border-bottom: 2px solid var(--tertiary-color-2);
-  margin-bottom: 10px;
-  background-color: var(--secondary-color-1);
+  /* margin-bottom: 10px; */
+  background-color: transparent;
 }
 
 .input-container input:focus {
@@ -41,13 +41,46 @@
   border-bottom: 2px solid var(--tertiary-color-1);
 }
 
+.input-container input::placeholder {
+  font-family: var(--font-gotham-pro);
+  color: var(--tertiary-color-2);
+  font-size: 1em;
+}
+
 .input-container textarea {
-  width: 50%;
+  width: 60%;
   border: 2px solid var(--tertiary-color-2);
+  font-family: var(--font-gotham-pro);
+  font-size: 1em;
+  background-color: transparent;
+  padding: 0.5em;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 39%;
+  border-bottom: 2px solid var(--tertiary-color-2);
+}
+
+.select-container select {
+  width: min-content;
+  border: none;
   font-family: var(--font-gotham-pro);
   font-size: 1em;
   background-color: var(--secondary-color-1);
   padding: 0.5em;
+}
+
+.select-container label {
+  font-family: var(--font-gotham-pro);
+}
+
+.select-container select:focus, 
+.select-container select:hover, .select-container select:active {
+  border: none;
+  outline: none;
 }
 
 .formButton {
@@ -72,12 +105,22 @@
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 655px) {
   .input-container input {
     width: 80%;
   }
 
+  .select-container {
+    width: 82%;
+  }
+
   .formButton {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .select-container {
+    width: 85%;
   }
 }
