@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+#cupcakesInfo, #cupcakes, #sweetsInfo, #sweets {
+  display: none;
+}
+
 .ourCatalog-title {
   font-family: var(--font-clicker);
   font-size: 3em;
@@ -78,7 +82,7 @@
   column-gap: 20px;
 }
 
-.ourCatalog-card-photo-img {
+.ourCatalog-card-photo-img img {
   width: 268px;
   background-color: var(--tertiary-color-2);
   height: 268px;
@@ -141,8 +145,8 @@
 
   .ourCatalog-card-photo-img,
   .ourCatalog-card-photo-img img {
-    width: 46vw;
-    height: 46vw;
+    width: 45vw;
+    height: 45vw;
   }
 }
 

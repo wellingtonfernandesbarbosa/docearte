@@ -9,6 +9,10 @@
 @import url('./styles/form.css');
 @import url('./styles/footer.css');
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 :root {
   --font-clicker: 'Clicker Script', cursive;
   --font-gotham-pro: 'Gotham Pro', sans-serif;
@@ -65,6 +69,7 @@ h1 {
 
 .button {
   padding: 16px 32px;
+  min-width: max-content;
   text-align: center;
   transition: background-color 0.3s ease;
 }
