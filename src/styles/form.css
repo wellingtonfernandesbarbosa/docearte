@@ -1,0 +1,125 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 3em 0 2em;
+}
+
+.form-title {
+  font-family: var(--font-clicker);
+  font-size: 3em;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  gap: 16px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.input-container input {
+  width: 37%;
+  border: none;
+  padding: 8px;
+  border-bottom: 2px solid var(--tertiary-color-2);
+  background-color: transparent;
+}
+
+.input-container input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--tertiary-color-1);
+}
+
+.input-container input::placeholder {
+  font-family: var(--font-gotham-pro);
+  color: var(--tertiary-color-2);
+  font-size: 1em;
+}
+
+.input-container textarea {
+  width: 60%;
+  border: 2px solid var(--tertiary-color-2);
+  font-family: var(--font-gotham-pro);
+  font-size: 1em;
+  background-color: transparent;
+  padding: 0.5em;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 39%;
+  border-bottom: 2px solid var(--tertiary-color-2);
+}
+
+.select-container select {
+  width: min-content;
+  border: none;
+  font-family: var(--font-gotham-pro);
+  font-size: 1em;
+  background-color: var(--secondary-color-1);
+  padding: 0.5em;
+}
+
+.select-container label {
+  font-family: var(--font-gotham-pro);
+}
+
+.select-container select:focus, 
+.select-container select:hover, .select-container select:active {
+  border: none;
+  outline: none;
+}
+
+.formButton {
+  width: 30%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  color: var(--tertiary-color-1);
+  scale: 1.05;
+}
+
+@media screen and (max-width: 900px) {
+  .form form {
+    width: 90%;
+  }
+  
+  .input-container textarea {
+    width: 70%;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .input-container input {
+    width: 80%;
+  }
+
+  .select-container {
+    width: 82%;
+  }
+
+  .formButton {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .select-container {
+    width: 85%;
+  }
+}
