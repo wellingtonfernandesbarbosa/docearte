@@ -15,22 +15,22 @@
   "lang": "pt-BR",
   "icons": [
     {
-      "src": "./src/assets/favicon/apple-touch-icon.png",
+      "src": "./favicon/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "./src/assets/favicon/android-chrome-192x192.png",
+      "src": "./favicon/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./src/assets/favicon/android-chrome-512x512.png",
+      "src": "./favicon/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "./src/assets/favicon/logo.png",
+      "src": "./favicon/logo.png",
       "sizes": "511x511",
       "type": "image/png",
       "maskable": true
@@ -38,14 +38,14 @@
   ],
   "screenshots": [
     {
-      "src": "./src/assets/favicon/widescreen.png",
+      "src": "./favicon/widescreen.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "purpose": "any",
       "form_factor": "wide"
     },
     {
-      "src": "./src/assets/favicon/portrait.png",
+      "src": "./favicon/portrait.png",
       "type": "image/png",
       "sizes": "433x857",
       "purpose": "any"
