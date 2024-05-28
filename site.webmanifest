@@ -6,7 +6,7 @@
   "description": "The Doce Arte Confectionery Home Page is an interactive platform for users to explore products, learn about the confectionery, access special offers, and order custom cakes. Built with HTML, CSS, and TypeScript.",
   "display": "standalone",
   "theme_color": "#431711",
-  "background_color": "#431711",
+  "background_color": "#ddfffd",
   "display_override": [
     "fullscreen",
     "minimal-ui"
@@ -27,27 +27,29 @@
     {
       "src": "./favicon/android-chrome-512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable",
+      "maskable": true
     },
     {
       "src": "./favicon/logo.png",
       "sizes": "511x511",
       "type": "image/png",
-      "maskable": true
+      "purpose": "any"
     }
   ],
   "screenshots": [
     {
       "src": "./favicon/widescreen.png",
       "type": "image/png",
-      "sizes": "1920x1080",
+      "sizes": "1435x807",
       "purpose": "any",
       "form_factor": "wide"
     },
     {
       "src": "./favicon/portrait.png",
       "type": "image/png",
-      "sizes": "433x857",
+      "sizes": "420x746",
       "purpose": "any"
     }
   ]
