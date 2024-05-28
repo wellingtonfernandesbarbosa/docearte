@@ -2,11 +2,11 @@
   "name": "Doce Arte Confeitaria",
   "short_name": "docearte",
   "id": "/public/assets/favicon/site.webmanifest",
-  "start_url": "../../index.html",
+  "start_url": "/",
   "description": "The Doce Arte Confectionery Home Page is an interactive platform for users to explore products, learn about the confectionery, access special offers, and order custom cakes. Built with HTML, CSS, and TypeScript.",
   "display": "standalone",
   "theme_color": "#431711",
-  "background_color": "#ddfffd",
+  "background_color": "#431711",
   "display_override": [
     "fullscreen",
     "minimal-ui"
@@ -15,22 +15,22 @@
   "lang": "pt-BR",
   "icons": [
     {
-      "src": "./apple-touch-icon.png",
+      "src": "./public/assets/favicon/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "./android-chrome-192x192.png",
+      "src": "./public/assets/favicon/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./android-chrome-512x512.png",
+      "src": "./public/assets/favicon/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "./logo.png",
+      "src": "./public/assets/favicon/logo.png",
       "sizes": "511x511",
       "type": "image/png",
       "maskable": true
@@ -38,14 +38,14 @@
   ],
   "screenshots": [
     {
-      "src": "./widescreen.png",
+      "src": "./public/assets/favicon/widescreen.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "purpose": "any",
       "form_factor": "wide"
     },
     {
-      "src": "./portrait.png",
+      "src": "./public/assets/favicon/portrait.png",
       "type": "image/png",
       "sizes": "433x857",
       "purpose": "any"
