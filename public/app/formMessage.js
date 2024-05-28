@@ -4,7 +4,6 @@ const eventInput = document.querySelector("#event");
 const guestsInput = document.querySelector("#guests");
 const preferencesInput = document.querySelector("#preferences");
 const formButton = document.querySelector("#formButton");
-console.log(preferencesInput.value = "");
 export const formMessage = () => {
     document.addEventListener("DOMContentLoaded", () => {
         nameInput.addEventListener('input', () => {

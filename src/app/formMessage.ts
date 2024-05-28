@@ -5,7 +5,6 @@ const guestsInput = document.querySelector("#guests") as HTMLInputElement;
 const preferencesInput = document.querySelector("#preferences") as HTMLTextAreaElement;
 
 const formButton = document.querySelector("#formButton") as HTMLAnchorElement;
-console.log(preferencesInput.value = "");
 
 export const formMessage = (): void => {
   document.addEventListener("DOMContentLoaded", () => {
