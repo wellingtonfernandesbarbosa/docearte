@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive or specific directories
+Disallow: /admin.html
+Disallow: /private/
+Disallow: /tmp/
+
+# Block specific bots
+User-agent: BadBot
+Disallow: /
+
+# Optional: Specify crawl delay to prevent server overload
+Crawl-delay: 10
