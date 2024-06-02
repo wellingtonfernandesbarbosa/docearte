@@ -6,6 +6,7 @@ const preferencesInput = document.querySelector("#preferences");
 const formButton = document.querySelector("#formButton");
 export const formMessage = () => {
     document.addEventListener("DOMContentLoaded", () => {
+        console.log("sdasdasdas");
         nameInput.addEventListener('input', () => {
             messageFormatting();
         });

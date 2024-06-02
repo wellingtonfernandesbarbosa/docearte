@@ -37,7 +37,7 @@
 
 .specialOffer_image {
   box-sizing: border-box;
-  background-image: url('../assets/img/nakedCake.webp');
+  background-image: url('../assets/img/diaDosNamorados/caixaEuTeAmo.webp');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -67,7 +67,7 @@
 
 @media (max-width: 768px) {
   .specialOffer_image {
-    background-image: url('../assets/img/nakedCake_768.webp');
+    background-image: url('../assets/img/diaDosNamorados/caixaEuTeAmo_786.webp');
     height: 350px;
   }
 }
@@ -81,7 +81,7 @@
 
 @media (max-width: 435px) {
   .specialOffer_image {
-    background-image: url('../assets/img/nakedCake_435.webp');
+    background-image: url('../assets/img/diaDosNamorados/caixaEuTeAmo_435.webp');
     height: 250px;
   }
 }

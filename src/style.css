@@ -9,6 +9,8 @@
 @import url('./styles/form.css');
 @import url('./styles/footer.css');
 
+@import url('./styles/diaDosNamorados.css');
+
 * {
   -webkit-tap-highlight-color: transparent;
 }
@@ -24,6 +26,8 @@
   --secondary-color-2: #ffe2ba;
   --tertiary-color-1: #fa9617;
   --tertiary-color-2: #431711;
+  
+  --max-width: 1280px;
 }
 
 ::-webkit-scrollbar {
