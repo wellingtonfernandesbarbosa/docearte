@@ -3,10 +3,6 @@
     {
       "source": "/(.*)",
       "destination": "/"
-    },
-    {
-      "source": "/admin",
-      "destination": "/admin.html"
     }
   ]
 }
