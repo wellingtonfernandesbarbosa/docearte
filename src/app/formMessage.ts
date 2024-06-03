@@ -28,6 +28,8 @@ export const formMessage = (): void => {
     preferencesInput.addEventListener("input", () => {
       messageFormatting();
     });
+
+    preferencesInput.value = "";
   });
 }
 

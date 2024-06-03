@@ -21,6 +21,7 @@ export const formMessage = () => {
         preferencesInput.addEventListener("input", () => {
             messageFormatting();
         });
+        preferencesInput.value = "";
     });
 };
 function messageFormatting() {

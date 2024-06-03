@@ -235,18 +235,22 @@
     <h2 class="form-title">Fale conosco</h2>
     <form id="form" action="" method="">
       <div class="input-container">
-        <input type="text" name="name" id="name" placeholder="Seu nome" required>
-        <input type="date" name="date" id="date" onfocus="" placeholder="Data do Evento">
-        <div class="select-container">
+        <input class="form-input" type="text" name="name" id="name" placeholder="Seu nome" required>
+        <div class="form-input dateContainer">
+          <label for="date">Data:</label>
+          <input type="date" name="date" id="date" onfocus="" placeholder="Data do Evento">
+        </div>
+        <div class="form-input">
           <label for="event">Tipo de evento:</label>
           <select name="event" id="event" required>
-            <option value="Aniversário" selected>Aniversário</option>
+            <option value="Aniversário">Aniversário</option>
             <option value="Casamento">Casamento</option>
+            <option value="Dia dos Namorados" selected>Dia dos Namorados</option>
             <option value="Outro">Outro</option>
           </select>
         </div>
-        <input type="number" name="guests" id="guests" placeholder="Número de Convidados">
-        <textarea rows="3" name="preferences" id="preferences"
+        <input class="form-input" type="number" name="guests" id="guests" placeholder="Número de Convidados">
+        <textarea class="form-input" rows="3" name="preferences" id="preferences"
           placeholder="Personalize seu pedido com bolos, doces e bombons">
         </textarea>
       </div>
