@@ -32,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   font-family: var(--font-gotham-pro);
-  width: 300px;
+  width: 40%;
   border: none;
   padding: 8px;
   font-size: 16px;
@@ -52,7 +52,6 @@
 }
 
 .dateContainer {
-  width: 300px;
   display: flex;
   justify-content: space-between;
 }
@@ -67,13 +66,14 @@
   outline: none;
 }
 
-.input-container textarea {
-  width: 300px;
+.textArea {
+  width: 50%;
   border: 2px solid var(--tertiary-color-2);
   font-family: var(--font-gotham-pro);
   font-size: 1em;
   background-color: transparent;
   padding: 0.5em;
+  margin: auto;
 }
 
 .formButton {
@@ -87,12 +87,12 @@
   scale: 1.05;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 978px) {
   .form form {
     width: 90%;
   }
 
-  .input-container textarea,
+  .textArea,
   .form-input {
     width: 50%;
   }
@@ -105,13 +105,5 @@
 
   .formButton {
     width: 60%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-
-  .input-container textarea,
-  .form-input {
-    width: 100%;
   }
 }
