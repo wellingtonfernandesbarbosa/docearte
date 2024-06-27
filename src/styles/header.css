@@ -72,6 +72,13 @@ header {
   gap: 4rem;
 }
 
+.order-button {
+  color: var(--tertiary-color-1);
+  font-size: 16px;
+  font-family: var(--font-gotham-pro);
+  cursor: pointer;
+}
+
 .order-title,
 .order-button {
   text-align: center;
@@ -85,8 +92,7 @@ header {
 }
 
 .order-button:active {
-  background-color: var(--tertiary-color-2);
-  color: #fff;
+  scale: 1.2;
 }
 
 @media (max-width: 1312px) {

@@ -33,7 +33,7 @@
   padding-bottom: 4px;
 }
 
-.ourCatalog-list li:hover {
+.ourCatalog-list-active {
   border-bottom: 2px solid var(--tertiary-color-2);
 }
 

@@ -1,7 +1,7 @@
 const cakes = document.getElementById("cakes");
 const sweets = document.getElementById("sweets");
 
-const cakesBtn = document.getElementById("cakesBtn");
+const cakesBtn = document.getElementById("cakesBtn") as HTMLLIElement;
 const sweetsBtn = document.getElementById("sweetsBtn");
 
 const cakesInfo = document.getElementById("cakesInfo");
@@ -25,6 +25,9 @@ cakesBtn?.addEventListener("click", () => {
 
   cakes?.setAttribute("style", "display: flex");
   sweets?.setAttribute("style", "display: none");
+
+  cakesBtn?.classList.add("ourCatalog-list-active");
+  sweetsBtn?.classList.remove("ourCatalog-list-active");
 });
 
 sweetsBtn?.addEventListener("click", () => {
@@ -35,4 +38,14 @@ sweetsBtn?.addEventListener("click", () => {
 
   cakes?.setAttribute("style", "display: none");
   sweets?.setAttribute("style", "display: flex");
+
+  cakesBtn?.classList.remove("ourCatalog-list-active");
+  sweetsBtn?.classList.add("ourCatalog-list-active");
+})
+
+const orderButton = document.querySelector(".order-button") as HTMLButtonElement;
+
+orderButton.addEventListener("click", () => {
+  window.location.href = "#ourCatalog";
+  cakesBtn.click();
 })
