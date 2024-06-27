@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/app/cakeCalc.ts
+public/app/cakeCalc.js
+admin.html
