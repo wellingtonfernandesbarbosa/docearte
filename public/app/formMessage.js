@@ -1,9 +1,13 @@
+import hapticFeedback from "./utils/hapticFeedback";
 const nameInput = document.querySelector("#name");
 const dateInput = document.querySelector("#date");
 const eventInput = document.querySelector("#event");
 const guestsInput = document.querySelector("#guests");
 const preferencesInput = document.querySelector("#preferences");
 const formButton = document.querySelector("#formButton");
+formButton.addEventListener('click', () => {
+    hapticFeedback();
+});
 export const formMessage = () => {
     document.addEventListener("DOMContentLoaded", () => {
         nameInput.addEventListener('input', () => {

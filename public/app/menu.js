@@ -1,3 +1,4 @@
+import hapticFeedback from "./utils/hapticFeedback";
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector("#right-menu");
 const menuLinks = document.querySelectorAll("#right-menu li a");
@@ -6,6 +7,7 @@ export const isClickInsideMenu = (event) => {
     return menu?.contains(event.target) || menuToggle?.contains(event.target);
 };
 menuToggle?.addEventListener('click', () => {
+    hapticFeedback();
     if (screenWidth <= 900)
         menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 });
@@ -17,6 +19,9 @@ window.addEventListener('click', (event) => {
 menuLinks.forEach((link) => {
     screenWidth <= 850 && link.addEventListener('click', () => {
         menu.style.display = 'none';
+    });
+    link.addEventListener('click', () => {
+        hapticFeedback();
     });
 });
 menuToggle.addEventListener("click", () => {
