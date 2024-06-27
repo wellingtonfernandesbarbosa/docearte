@@ -31,6 +31,10 @@ header {
   color: var(--tertiary-color-1);
 }
 
+.right-menu li a img {
+  display: none;
+}
+
 .left-menu {
   order: -1;
 }
@@ -112,7 +116,7 @@ header {
     padding: 20px;
     gap: 20px;
     position: absolute;
-    top: 84px;
+    top: 83px;
     right: 0px;
     z-index: 2;
     border-bottom: 3px solid var(--tertiary-color-1);
@@ -124,6 +128,21 @@ header {
 
   .right-menu li {
     font-size: 18px;
+  }
+
+  .right-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px
+  }
+
+  .right-menu li a img {
+    display: block;
+    height: 24px;
+  }
+
+  .right-menu li a span {
+    padding: 12px 0;
   }
 
   .menu-toggle {
