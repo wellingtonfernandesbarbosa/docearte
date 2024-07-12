@@ -1,13 +1,21 @@
 header {
-  background-color: var(--tertiary-color-2);
   width: 100%;
 }
 
 .nav-bar {
+  background-color: var(--tertiary-color-2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav-bar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   max-width: 1280px;
   padding: 24px 0;
   margin: 0 auto;
@@ -59,6 +67,8 @@ header {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  position: relative;
+  margin-top: 96px;
 }
 
 .orderCake-content {
@@ -96,12 +106,16 @@ header {
 }
 
 @media (max-width: 1312px) {
-  .nav-bar {
+  .nav-bar-content {
     padding: 18px 16px;
   }
 
   .orderCake-content {
     height: 40vw;
+  }
+
+  .orderCake {
+    margin-top: 84px;
   }
 }
 
@@ -179,6 +193,7 @@ header {
 
   .orderCake {
     height: 300px;
+    margin-top: 64px;
   }
 
   .order-title {
@@ -189,7 +204,7 @@ header {
     font-size: 16px;
   }
 
-  .nav-bar {
+  .nav-bar-content {
     padding: 1em;
   }
 }
