@@ -38,8 +38,6 @@ body {
 }
 
 .login-message {
-  font-family: var(--font-clicker);
-  font-size: 3em;
   line-height: 1.5em;
   text-align: center;
   width: 80%;
@@ -88,13 +86,14 @@ body {
     font-size: 2em;
     width: 90%;
   }
-  .formButton{
+
+  .formButton {
     width: 40%;
   }
 }
 
 @media (max-width: 768px) {
-  
+
   .main {
     margin: 2em 1em;
     height: auto;
@@ -104,7 +103,8 @@ body {
     flex-direction: column;
   }
 
-  .login-welcome, .login-form {
+  .login-welcome,
+  .login-form {
     width: 100%;
   }
 
@@ -121,7 +121,7 @@ body {
 
 @media (max-width: 617px) {
   .login-section {
-    padding: 3em;    
+    padding: 3em;
   }
 }
 
@@ -141,7 +141,7 @@ body {
   body {
     height: auto;
   }
-  
+
   .login-section {
     padding: 1em;
   }

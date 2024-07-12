@@ -13,11 +13,6 @@
   color: var(--tertiary-color-2);
 }
 
-.aboutUs h2 {
-  font-family: var(--font-clicker);
-  font-size: 3em;
-}
-
 .aboutUs-text {
   margin: 0 auto;
   max-width: 90%;

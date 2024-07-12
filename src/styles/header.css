@@ -15,13 +15,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   max-width: 1280px;
   padding: 24px 0;
   margin: 0 auto;
 }
 
-.company-link-header,.show,
+.company-link-header,
+.show,
 .right-menu li a {
   color: var(--tertiary-color-1)
 }
@@ -96,7 +97,6 @@ header {
 }
 
 .order-title {
-  font-family: var(--font-clicker);
   color: var(--tertiary-color-2);
   font-size: 52px;
 }
@@ -211,6 +211,6 @@ header {
 
 @media (max-width: 450px) {
   .right-menu {
-      top: 63px;
-    }
+    top: 63px;
+  }
 }

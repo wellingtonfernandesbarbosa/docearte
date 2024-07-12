@@ -13,11 +13,6 @@
   display: none;
 }
 
-.ourCatalog-title {
-  font-family: var(--font-clicker);
-  font-size: 3em;
-}
-
 .ourCatalog-list {
   display: flex;
   justify-content: center;
@@ -65,9 +60,8 @@
   width: 350px;
 }
 
-.ourCatalog-card-info h3 {
-  font-family: var(--font-clicker);
-  font-size: 2em;
+.ourCatalog-card-info-title, .ourCatalog-card-info-text {
+  color: var(--primary-color);
 }
 
 .ourCatalog-card-info p {

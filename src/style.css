@@ -25,7 +25,7 @@
   --secondary-color-2: #ffe2ba;
   --tertiary-color-1: #fa9617;
   --tertiary-color-2: #431711;
-  
+
   --max-width: 1280px;
 }
 
@@ -58,16 +58,33 @@ a {
   color: var(--tertiary-color-2);
 }
 
-.company-name {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-clicker);
+  color: var(--tertiary-color-2);
+}
+
+h2 {
   font-size: 48px;
 }
 
+h3 {
+  font-size: 32px;
+}
+
 p,
-a,
-span,
-h1 {
+a {
   font-family: var(--font-gotham-pro);
+  color: var(--tertiary-color-2);
+}
+
+.company-name {
+  font-family: var(--font-clicker);
+  font-size: 48px;
 }
 
 .button {

@@ -6,11 +6,6 @@
   margin: 3em 0 2em;
 }
 
-.form-title {
-  font-family: var(--font-clicker);
-  font-size: 3em;
-}
-
 .form form {
   display: flex;
   flex-direction: column;
