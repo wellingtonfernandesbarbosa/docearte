@@ -44,7 +44,18 @@
   max-width: 100%;
 }
 
+.curiosities-info-button {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.curiosities-info-button button {
+  padding: 0.5em 1em;
+}
+
 .curiosities-info-title {
+  display: none;
   width: max-content;
   margin: 0 auto;
   font-size: 32px;
@@ -53,6 +64,7 @@
 }
 
 .curiosities-info-text {
+  display: none;
   max-width: 80%;
   line-height: 1.5em;
   text-align: center;
