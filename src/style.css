@@ -77,7 +77,7 @@ h3 {
 }
 
 p,
-a {
+a, li {
   font-family: var(--font-gotham-pro);
   color: var(--tertiary-color-2);
 }
