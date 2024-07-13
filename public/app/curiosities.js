@@ -50,3 +50,10 @@ curiositiesEggs.addEventListener('click', () => {
     curiositiesTitle.innerHTML = curiosities[2].title;
     curiositiesText.innerHTML = curiosities[2].text;
 });
+const curiositiesButton = document.getElementById('curiositiesButton');
+curiositiesButton.addEventListener('click', () => {
+    hapticFeedback();
+    curiositiesTitle.setAttribute('style', 'display: block');
+    curiositiesText.setAttribute('style', 'display: block');
+    curiositiesButton.setAttribute('style', 'display: none');
+});
