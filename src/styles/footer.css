@@ -11,18 +11,20 @@
   max-width: 1280px;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-
 .company-link-footer {
   color: var(--tertiary-color-1);
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .footer-link {
   color: var(--primary-color);
+  width: max-content;
 }
 
 .footer-link:hover {
@@ -57,7 +59,7 @@
 }
 
 
-@media (max-width: 930px) {
+@media (max-width: 1080px) {
   .footer-content {
     padding: 16px 0;
     gap: 16px;
@@ -68,7 +70,7 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 930px) {
   .footer-content {
     flex-direction: column;
   }
