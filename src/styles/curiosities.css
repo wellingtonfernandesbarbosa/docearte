@@ -8,7 +8,6 @@
 }
 
 .curiosities-title {
-  /* font-size: 48px; */
   text-align: center;
 }
 
@@ -65,7 +64,7 @@
 
 .curiosities-info-text {
   display: none;
-  max-width: 80%;
+  max-width: 82%;
   line-height: 1.5em;
   text-align: center;
   margin: 0 auto;
