@@ -23,5 +23,11 @@ export const curiosities = [
     img: '/assets/img/curiosities_milk.webp',
     title: 'O Segredo da Umidade e do Sabor',
     text: "🥛✨ O leite é o segredo para um bolo perfeito! <br>🥛✨ Ele desempenha um papel crucial nas reações químicas que garantem uma textura macia, um sabor irresistível e aquela cor dourada maravilhosa. <br>🌟🍰 O leite adiciona umidade à massa, o que ajuda a manter o bolo úmido e fofinho.<br>Além disso, suas proteínas contribuem para a estrutura do bolo, ajudando a massa a crescer e a ficar estável. <br>🧁 O leite também melhora a aparência do bolo, dando aquela cor dourada que todos adoram.<br>Sem o leite, não teríamos bolos tão deliciosos e bem estruturados. <br>💕 Quer um bolo incrível ? Não esqueça do leite! 🥛✨"
+  }, {
+    id: 4,
+    nome: 'Farinha de Trigo',
+    img: '/assets/img/curiosities_wheatFlour.webp',
+    title: 'O alicerce do bolo!',
+    text: '🏗️✨A mágica acontece graças ao glúten, uma proteína poderosa presente no trigo. 🌾✨ Quando misturada com água, ela forma uma rede elástica que prende o ar e dá estrutura à massa. 🔗<br>💪 Essa rede é fundamental para que nossos pães cresçam no forno e os bolos fiquem macios e aerados. 🥖🍰 Sem o glúten, teríamos apenas um amontoado de grãos úmidos. 😅<br><br>😋🌟 Sabor e Aroma Únicos!<br>😋🌟A farinha de trigo não é só estrutura! Ela também adiciona um sabor incrível e aroma irresistível aos nossos pães e bolos, elevando cada mordida a um nível de delícia sem igual. 🍞✨<br><br>🎨👨‍🍳 Versatilidade Sem Limites! 🍕🥟<br>🍪A farinha de trigo vai além do pãozinho de cada dia! Ela é a base para massas de tortas, pizzas, macarrão caseiro, empadas, biscoitos e muito mais. 🥧🍝🥠 Com criatividade, podemos usar a farinha de trigo para criar pratos doces e salgados incríveis! 🎨🍽️<br><br>😋💫 Além de oferecer suporte estrutural, a farinha de trigo contribui para o crescimento, a maciez, o sabor e o aroma do bolo, tornando cada fatia irresistível. 😋💫<br><br>Descubra o potencial mágico da farinha de trigo na sua cozinha! 🔥🎂✨'
   }
 ]

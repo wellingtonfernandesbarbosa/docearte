@@ -17,9 +17,11 @@
   align-items: center;
   font-family: var(--font-gotham-pro);
   font-size: 18px;
-  gap: 2em;
+  column-gap: 1.5em;
+  row-gap: 1em;
   cursor: pointer;
-  height: 30px;
+  height: min-content;
+  flex-wrap: wrap;
 }
 
 .curiosities-list-item {
