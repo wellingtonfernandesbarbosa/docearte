@@ -72,6 +72,10 @@
   color: var(--tertiary-color-2);
 }
 
+.curiosities-info-text span {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   .curiosities-info-text {
     max-width: 90%;
