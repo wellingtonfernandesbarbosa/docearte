@@ -20,7 +20,7 @@ export const curiosities: Curiosities[] = [
     Venha descobrir o que torna nossos bolos tão especiais!<br>Experimente nossos bolos que são puro sabor!😋`
   }, {
     id: 1,
-    nome: 'Acúcar',
+    nome: 'Açúcar',
     img: '/assets/img/curiosities_sugar.webp',
     title: 'Doçura, Sabor e Textura Perfeita',
     text: `🍰✨O açúcar é a estrela que adoça o bolo e realça todos os sabores! 😋✨<br><br>
