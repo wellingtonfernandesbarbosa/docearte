@@ -6,7 +6,7 @@
   margin: 3em 0 2em;
 }
 
-.form form {
+.form .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,7 +83,7 @@
 }
 
 @media screen and (max-width: 978px) {
-  .form form {
+  .form .form-container {
     width: 90%;
   }
 
