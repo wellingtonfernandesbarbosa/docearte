@@ -8,6 +8,7 @@
 
 .specialOffer-title {
   color: var(--primary-color);
+  text-align: center;
 }
 
 .specialOffer-card {
