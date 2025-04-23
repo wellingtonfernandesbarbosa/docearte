@@ -53,7 +53,7 @@ function messageFormatting(): void {
       : "idéias: não informado."
     }\nObrigado(a), ${nameInput.value}.`);
   ;
-  formButton.setAttribute('href', `https://wa.me/+5531997706644?text=${message}`);
+  formButton.setAttribute('href', `https://wa.me/+5531997660055?text=${message}`);
 }
 
 
