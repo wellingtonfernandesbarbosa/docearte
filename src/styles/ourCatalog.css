@@ -87,7 +87,7 @@
 
 @media (max-width: 1312px) {
   .ourCatalog-card {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .ourCatalog-card-info {
