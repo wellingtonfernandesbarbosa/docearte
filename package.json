@@ -10,8 +10,8 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "@types/node": "^24.3.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
   }
 }
