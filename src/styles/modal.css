@@ -40,14 +40,14 @@
   right: 0;
   bottom: 12px;
   width: fit-content;
-  max-width: 90%;
+  max-width: 60%;
   margin: 0 auto;
   padding: 8px;
   background: var(--tertiary-color-2);
   border-radius: 8px;
   color: var(--tertiary-color-1);
   font-family: var(--font-clicker);
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   box-sizing: border-box;
 }
