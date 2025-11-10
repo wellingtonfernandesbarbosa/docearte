@@ -13,19 +13,20 @@ const modalContent = document.createElement("div");
 modalContent.className = "modal-content";
 modal.appendChild(modalContent);
 
-const closeBtn = document.createElement("span");
-closeBtn.className = "close-modal";
-closeBtn.innerHTML = "&times;";
-modalContent.appendChild(closeBtn);
+const closeIcon = document.createElement("img");
+closeIcon.src = "/assets/img/icons/close.png"; // Substitua pelo caminho do seu ícone
+closeIcon.alt = "Fechar";
+closeIcon.className = "close-icon";
+modalContent.appendChild(closeIcon);
 
-const prevBtn = document.createElement("button");
+const prevBtn = document.createElement("img");
 prevBtn.className = "modal-nav-button modal-prev";
-prevBtn.innerHTML = "&#10094;";
+prevBtn.src = "/assets/img/icons/prev.png"; // Substitua pelo caminho correto do ícone
 modalContent.appendChild(prevBtn);
 
-const nextBtn = document.createElement("button");
+const nextBtn = document.createElement("img");
 nextBtn.className = "modal-nav-button modal-next";
-nextBtn.innerHTML = "&#10095;";
+nextBtn.src = "/assets/img/icons/next.png"; // Substitua pelo caminho correto do ícone
 modalContent.appendChild(nextBtn);
 
 const modalImage = document.createElement("img");
@@ -181,7 +182,7 @@ function handleSwipe() {
 }
 
 // Close modal when clicking on close button or outside the modal
-closeBtn.addEventListener("click", closeModal);
+closeIcon.addEventListener("click", closeModal);
 modal.addEventListener("click", (event) => {
   if (event.target === modal) {
     closeModal();
