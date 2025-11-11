@@ -23,6 +23,13 @@
   -webkit-user-select: none;
 }
 
+@media (orientation: portrait) {
+  .modal-content {
+    width: 90%;
+    margin: 40% auto;
+  }
+}
+
 .modal-image {
   width: 100%;
   max-height: 100%;
